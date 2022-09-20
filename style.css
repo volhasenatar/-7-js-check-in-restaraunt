@@ -1,0 +1,112 @@
+body {
+    background-image: url('brooke-lark-lcZ9NxhOSlo-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 50px 75px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 352px;
+    background-color: rgb(247,206,201, 0.5);
+    padding: 30px;
+    border-radius: 40px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.variable {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+h2 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.bill, .people {
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(236, 240, 243, 0.7);
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 17px;
+    outline: 0;
+    outline-offset: 0; 
+}
+
+input[type=text]:focus::-webkit-input-placeholder {
+    color: transparent;  
+}
+
+.btn-calculate, #tip {
+    font-family: 'Quicksand', sans-serif; 
+    width: 352px;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    background-color: rgb(0,116,175, 0.5);
+    border-radius: 20px;
+    border: none;
+    outline: 0;
+    outline-offset: 0; 
+}
+
+.total-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(247,206,201, 0.5);
+    width: 600px;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 40px;
+}
+
+#billSplit, #totalTip, #totalAmount {
+    background-color: rgb(111, 152, 110, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    font-family: 'Quicksand', sans-serif; 
+}
+
+@media all and (max-width: 700px){
+    .total-container {
+        display: flex; 
+        flex-direction: column;
+        width: 352px;
+    }
+}
+
+@media all and (max-width: 420px){
+    .total-container {
+        display: flex; 
+        flex-direction: column;
+    }
+
+    h1,.bill, .people, .btn-calculate, #tip {
+        font-size: 15px;
+    }
+
+    .main-container, .container, .total-container, .btn-calculate, #tip {
+        width: 300px;
+    }
+
+}
+@media all and (max-width: 320px) {
+    .main-container {
+        margin-left: 50px;
+    }
+}
